@@ -192,7 +192,27 @@ form.addEventListener('submit', event => {
     message.className = 'form-message error';
     return;
   }
-  message.textContent = 'Thank you. Your enquiry is ready for our team and we will be in touch shortly.';
+  const subject = `Project enquiry from ${data.get('name')}`;
+  const body = [
+    `Name: ${data.get('name')}`,
+    `Email: ${data.get('email')}`,
+    `Phone: ${data.get('phone')}`,
+    `Company: ${data.get('company') || 'Not provided'}`,
+    `Project type: ${data.get('type')}`,
+    `Estimated budget: ${data.get('budget')}`,
+    '',
+    'Project details:',
+    data.get('message')
+  ].join('\n');
+  const composeUrl = new URL('https://mail.google.com/mail/');
+  composeUrl.search = new URLSearchParams({
+    view: 'cm',
+    fs: '1',
+    to: 'cornerstonemoderhomes@gmail.com',
+    su: subject,
+    body
+  }).toString();
+  message.textContent = 'Opening Gmail with your enquiry. Review it there and send when ready.';
   message.className = 'form-message success';
-  form.reset();
+  window.location.assign(composeUrl.toString());
 });
