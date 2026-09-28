@@ -208,7 +208,7 @@ form.addEventListener('submit', event => {
   composeUrl.search = new URLSearchParams({
     view: 'cm',
     fs: '1',
-    to: 'cornerstonemoderhomes@gmail.com',
+    to: 'cornerstonemodernhomes@gmail.com',
     su: subject,
     body
   }).toString();
