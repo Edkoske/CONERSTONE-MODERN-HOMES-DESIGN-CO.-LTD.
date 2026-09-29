@@ -11,6 +11,15 @@ const footerAddress = $('.footer__contact p');
 if (studioAddress) studioAddress.innerHTML = 'Berur Plaza, Room 1 Upper<br>Eldoret, Kenya';
 if (footerAddress) footerAddress.innerHTML = 'Berur Plaza, Room 1 Upper<br>Eldoret, Kenya';
 
+const footerBottom = $('.footer__bottom');
+if (footerBottom) {
+  const termsLink = document.createElement('a');
+  termsLink.className = 'terms-footer-link';
+  termsLink.href = '#terms';
+  termsLink.textContent = 'Terms & Conditions';
+  footerBottom.append(termsLink);
+}
+
 const menuToggle = $('.menu-toggle');
 const navMenu = $('.nav-menu');
 menuToggle?.addEventListener('click', () => {
