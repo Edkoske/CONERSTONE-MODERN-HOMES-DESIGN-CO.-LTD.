@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Construction Company in Eldoret, Kenya | Conerstone Modern Homes</title>
-  <meta name="description" content="Conerstone Modern Homes is an Eldoret construction company providing residential and commercial building, civil works, renovations, and project management.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>We'll Be Back Soon | Conerstone Modern Homes</title>
+  <meta name="description" content="Conerstone Modern Homes is currently carrying out scheduled website maintenance. Contact our team by phone or email.">
+  <meta name="robots" content="noindex, nofollow">
   <meta name="author" content="Conerstone Modern Homes and Design Company Limited">
   <meta property="og:site_name" content="Conerstone Modern Homes and Design Company Limited">
   <meta property="og:title" content="Construction Company in Eldoret, Kenya | Conerstone Modern Homes">
@@ -50,8 +50,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body.maintenance-mode > :not(.maintenance-screen) { display: none !important; }
+    .maintenance-screen { position: relative; isolation: isolate; display: grid; min-height: 100vh; min-height: 100svh; place-items: center; padding: 2rem; overflow: hidden; color: #fff; text-align: center; background: #1c1d1b url('images/1790170248520.jpg') center / cover no-repeat; }
+    .maintenance-screen::before { position: absolute; z-index: -1; inset: 0; content: ''; background: linear-gradient(90deg, rgba(20, 22, 20, .88), rgba(20, 22, 20, .66)); }
+    .maintenance-content { width: min(100%, 680px); }
+    .maintenance-logo { width: 76px; height: 76px; margin: 0 auto 2rem; object-fit: contain; }
+    .maintenance-label { margin: 0 0 1rem; color: #efb326; font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    .maintenance-content h1 { margin: 0; font: 600 clamp(2.5rem, 7vw, 5rem)/1.05 'Space Grotesk', sans-serif; }
+    .maintenance-copy { max-width: 510px; margin: 1.25rem auto 2rem; color: #e2e3de; font-size: 1.05rem; }
+    .maintenance-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem 1.75rem; font-size: .95rem; }
+    .maintenance-contact a { color: #fff; text-decoration: underline; text-decoration-color: #efb326; text-underline-offset: .3rem; }
+    @media (max-width: 480px) { .maintenance-screen { padding: 1.5rem; } .maintenance-contact { flex-direction: column; gap: .75rem; } }
+  </style>
 </head>
-<body>
+<body class="maintenance-mode">
+  <main class="maintenance-screen" aria-labelledby="maintenance-title">
+    <div class="maintenance-content">
+      <img class="maintenance-logo" src="images/logo.jpg" alt="Conerstone Modern Homes logo">
+      <p class="maintenance-label">Website maintenance</p>
+      <h1 id="maintenance-title">We'll be back soon.</h1>
+      <p class="maintenance-copy">We're making a few improvements to our website. Please reach out to our team while we're working behind the scenes.</p>
+      <div class="maintenance-contact" aria-label="Contact Conerstone Modern Homes">
+        <a href="mailto:cornerstonemodernhomes@gmail.com">cornerstonemodernhomes@gmail.com</a>
+        <a href="tel:+254700499272">0700 499 272</a>
+      </div>
+    </div>
+  </main>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header" id="home">
     <div class="topbar">
